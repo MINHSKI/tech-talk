@@ -1,11 +1,11 @@
 import React from 'react';
 import { Text, View, StyleSheet, Button } from 'react-native';
 
-const Home = (props) => {
+const Page1 = (props) => {
     return (
       <View style={styles.container}>
-        <Text>The Best Home Page</Text>
-        <Button title="Page 1" onPress={() => props.navigation.navigate('Page1')} />
+        <Text>Page Number 1</Text>
+        <Button title="Page 2" onPress={() => props.navigation.navigate('Page2')} />
       </View>
     );
 }
@@ -19,5 +19,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Home
-
+export default Page1

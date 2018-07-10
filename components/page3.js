@@ -1,23 +1,29 @@
 import React from 'react';
 import { Text, View, StyleSheet, Button } from 'react-native';
 
-const Home = (props) => {
+class Page3 extends React.Component{
+  static navigationOptions({navigation}) {
+    return {
+      headerLeft: <Button title="Go Back" onPress={() => navigation.goBack()} />
+    }
+  }
+  render() {
     return (
       <View style={styles.container}>
-        <Text>The Best Home Page</Text>
-        <Button title="Page 1" onPress={() => props.navigation.navigate('Page1')} />
+        <Text>Page Number 3</Text>
       </View>
     );
+  }
 }
+
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#ff0',
     alignItems: 'center',
     justifyContent: 'center',
   },
 });
 
-export default Home
-
+export default Page3
