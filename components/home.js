@@ -5,7 +5,6 @@ const Home = (props) => {
     return (
       <View style={styles.container}>
         <Text>The Best Home Page</Text>
-        <Button title="Page 1" onPress={() => props.navigation.navigate('Page1')} />
       </View>
     );
 }

@@ -5,7 +5,9 @@ import StackNavigator from './components/stackNavigator'
 export default class App extends React.Component {
   render() {
     return (
-      <StackNavigator />
+      <View>
+
+      </View>
     );
   }
 }
